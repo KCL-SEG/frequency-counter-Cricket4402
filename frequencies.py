@@ -6,7 +6,7 @@ def frequencies(items):
     # Your code goes here
     for i in range(len(items)):
         x = str(items[i])
-        if(x not in frequencies.keys()):
+        if not(x in frequencies.keys()):
             frequencies.update(x, 1);
         else:
             frequencies.update(x, frequencies[x] +1);
