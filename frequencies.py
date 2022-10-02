@@ -6,9 +6,9 @@ def frequencies(items):
     # Your code goes here
     for i in range(len(items)):
         x = str(items[i])
-        if(frequencies[x] == None):
-            frequencies[x] = 1;
+        if(x in frequencies.keys):
+            frequencies.update(x, 0);
         else:
-            frequencies[x] = frequencies[x] + 1;
+            frequencies.update(x, frequencies[x] +1);
     
     return frequencies
