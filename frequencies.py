@@ -4,7 +4,7 @@
 def frequencies(items):
     frequencies = {}
     # Your code goes here
-    for i in items:
+    for i in range(len(items)):
         x = str(items[i])
         if(frequencies[x] == None):
             frequencies[x] = 1;
